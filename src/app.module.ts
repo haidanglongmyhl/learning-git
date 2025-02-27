@@ -10,6 +10,8 @@ import { TagsModule } from './tags/tags.module';
 import { MetaOptionsModule } from './meta-options/meta-options.module';
 import { CategoriesController } from './categories/categories.controller';
 import { CategoriesModule } from './categories/categories.module';
+import { OrderModule } from './order/order.module';
+import { OrdersModule } from './orders/orders.module';
 
 @Module({
   imports: [
@@ -34,6 +36,8 @@ import { CategoriesModule } from './categories/categories.module';
     TagsModule,
     MetaOptionsModule,
     CategoriesModule,
+    OrderModule,
+    OrdersModule,
   ],
   controllers: [AppController, CategoriesController],
   providers: [AppService],
