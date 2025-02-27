@@ -17,4 +17,8 @@ export class OrdersService {
 
     return newOrder;
   }
+
+  public async listOrder() {
+    return await this.ordersRepository.find();
+  }
 }
