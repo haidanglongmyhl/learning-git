@@ -21,4 +21,12 @@ export class OrdersService {
   public async listOrder() {
     return await this.ordersRepository.find();
   }
+
+  public async delete(id: number) {
+    // //Delete the post
+    await this.ordersRepository.delete(id);
+
+    //Confirmation
+    return { deleted: true, id };
+  }
 }
