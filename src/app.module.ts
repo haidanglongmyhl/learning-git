@@ -10,6 +10,7 @@ import { TagsModule } from './tags/tags.module';
 import { MetaOptionsModule } from './meta-options/meta-options.module';
 import { CategoriesController } from './categories/categories.controller';
 import { CategoriesModule } from './categories/categories.module';
+import { PersonsModule } from './persons/persons.module';
 
 @Module({
   imports: [
@@ -34,6 +35,7 @@ import { CategoriesModule } from './categories/categories.module';
     TagsModule,
     MetaOptionsModule,
     CategoriesModule,
+    PersonsModule,
   ],
   controllers: [AppController, CategoriesController],
   providers: [AppService],
